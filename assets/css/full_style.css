@@ -1,0 +1,111 @@
+
+/* Global Font and Background */
+body {
+  font-family: 'Gelica', sans-serif; /* Apply Adobe font */
+  color: #ffffff; /* Light text color for readability on dark background */
+  background-color: #0A0A0A; /* Dark background */
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* Bright white for headings */
+}
+
+/* Paragraph and Link Styles */
+p {
+  color: #cccccc; /* Dimmed light color for paragraphs */
+}
+
+a {
+  color: #D41383; /* Accent color from The Make Spot Palette for links */
+}
+
+/* Countdown Style */
+.countdown .single-count-content .count {
+  color: #ffffff; /* Light color for countdown numbers */
+}
+.countdown .single-count-content .text {
+  color: rgba(255, 255, 255, 0.7); /* Lightened, semi-transparent for labels */
+}
+
+/* Utility Classes */
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Additional layout and utility styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 15px;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #D41383; /* tms-hot-pink */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #A69A94; /* tms-slate-grey for hover */
+}
+
+/* Additional classes as placeholders */
+.bg-dark {
+  background-color: #223C34; /* tms-forest-green */
+}
+
+.text-muted {
+  color: #A69A94; /* tms-slate-grey */
+}
+
+.border {
+  border: 1px solid #3C222A; /* tms-burgundy-wine */
+}
+
+.border-radius {
+  border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #cccccc;
+  background-color: #223C34; /* tms-forest-green */
+}
+
+/* Example of responsive styling */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .col {
+    flex: 100%;
+    padding: 5px;
+  }
+}

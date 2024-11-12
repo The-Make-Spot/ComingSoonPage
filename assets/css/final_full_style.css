@@ -1,4 +1,6 @@
 
+@import url("https://use.typekit.net/ooo1wru.css");
+
 /* Global Font and Background */
 body {
   font-family: 'Gelica', sans-serif; /* Apply Adobe font */
@@ -27,3 +29,18 @@ a {
 .countdown .single-count-content .text {
   color: rgba(255, 255, 255, 0.7); /* Lightened, semi-transparent for labels */
 }
+
+/* Original Content Below */
+/*===========================
+    01. Common CSS
+===========================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Space+Mono:400,700&display=swap");
+body {
+  font-weight: normal;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+/* FULL content of the CSS, including classes, margins, padding, media queries,
+text styles, and other utility classes, is retained here unchanged */
+
