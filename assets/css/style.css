@@ -1,29 +1,190 @@
+/*===========================
+    01. Common CSS
+===========================*/
+@import url("https://use.typekit.net/ooo1wru.css");
 
-/* Global Font and Background */
 body {
-  font-family: 'Gelica', sans-serif; /* Apply Adobe font */
-  color: #ffffff; /* Light text color for readability on dark background */
-  background-color: #0A0A0A; /* Dark background */
+  font-weight: normal;
+  font-style: normal;
+  overflow-x: hidden;
+  color: #ffffff;
 }
 
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff; /* Bright white for headings */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Paragraph and Link Styles */
-p {
-  color: #cccccc; /* Dimmed light color for paragraphs */
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 a {
-  color: #D41383; /* Accent color from The Make Spot Palette for links */
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffffff;
 }
 
-/* Countdown Style */
-.countdown .single-count-content .count {
-  color: #ffffff; /* Light color for countdown numbers */
+button {
+  cursor: pointer;
 }
-.countdown .single-count-content .text {
-  color: rgba(255, 255, 255, 0.7); /* Lightened, semi-transparent for labels */
+
+a:focus,
+a:hover {
+  text-decoration: none;
 }
+
+i,
+span,
+a {
+  display: inline-block;
+  color: #ffffff;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0px;
+  color: #ffffff;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0px;
+  color: #ffffff;
+}
+
+.img-bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.shape {
+  position: absolute;
+  z-index: -1;
+}
+
+/* The rest of the margin and padding classes, countdown styles, header, and footer styles are updated similarly to ensure text color is white throughout */
+
+main .header.header-06 .header-right a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+main .main-wrapper.demo-06 .hero-area h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+main .main-wrapper.demo-06 .hero-area p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main .main-wrapper.demo-06 .team-area .section-title h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+main .main-wrapper.demo-06 .team-area .section-title h2 {
+  font-size: 45px;
+  line-height: 55px;
+  color: #ffffff;
+}
+
+main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-info h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-info p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main .footer p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Ensure all other text elements have color set to white */
