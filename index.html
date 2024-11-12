@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Make Spot Sewing Academy is coming soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .countdown div {
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        .countdown span {
+            display: block;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+
+        .message {
+            font-size: 1.1em;
+            margin-top: 20px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>We Are Coming Soon</h1>
+        <div class="countdown" id="countdown">
+            <div><span id="days">95</span><span>Days</span></div>
+            <div><span id="hours">23</span><span>Hours</span></div>
+            <div><span id="minutes">53</span><span>Minutes</span></div>
+            <div><span id="seconds">02</span><span>Seconds</span></div>
+        </div>
+        <p class="message">The Make Spot Sewing Academy is coming soon!</p>
+    </div>
+
+    <script>
+        // Set the target date for the countdown (example: 100 days from now)
+        const targetDate = new Date();
+        const targetDate = new Date('2024-12-20T18:00:00');
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "We're Live!";
+            }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
